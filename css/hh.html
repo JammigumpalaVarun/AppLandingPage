@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin:0;
+            }
+        </style>
+    </head>
+<body>
+
+<div style="width:1533px; height:824px; background-color: aqua; ">1</div>
+<script>
+    const instrumentsList = document.getElementById('instruments');
+
+    const listItems = document.querySelectorAll('li');
+    const button = document.querySelector('button');
+
+    button.addEventListener('click', () => {
+        const li = document.createElement('li');
+        li.textContent = "Piano";
+        instrumentsList.appendChild(li);
+        console.log(listItems);
+    })
+</script>
+
+</body>
+</html>
